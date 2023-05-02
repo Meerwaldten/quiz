@@ -8,7 +8,7 @@ export default function Quiz() {
     const [currentSection, setCurrentSection] = useState(0);
     const [numCorrect, setNumCorrect] = useState(0);
     const [sectionQuestions, setSectionQuestions] = useState([]);
-      
+
     async function fetchQuestions(section) {
         try {
         const response = await fetch(`https://staging.inceptsustainability.com/wp-json/task-quiz/v1/quiz/1?section=${section}`);
@@ -42,7 +42,6 @@ export default function Quiz() {
     };
 
 
-    
     function handleAnswer(isCorrect) {
         if (isCorrect) {
           setNumCorrect(numCorrect + 1);
@@ -55,16 +54,8 @@ export default function Quiz() {
         }
         console.log("Number of correct answers: " + numCorrect)
       }
-    
-      
-    /*
-    const handleAnswer = (isCorrect) => {
-        console.log("Did we do it?")
-        if (isCorrect) {
-        setNumCorrect(numCorrect + 1);
-        }
-    };
-    */
+
+
       
     return (
         <div className="question-container">

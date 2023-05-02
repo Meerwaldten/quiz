@@ -22,31 +22,4 @@ function App() {
 }
 
 
-
-/*
-function App() {
-  return (
-    <div class="App">
-      <div class="image-container">
-        <img src={image1} alt="Vindmoelle"></img>
-        <img src={image2} alt="Logo"></img>
-          <div className="quiz-container">
-            <Quiz></Quiz>
-          </div>
-      </div>
-    </div>
-  );
-}
-*/
-
-/*
-function App() {
-  return (
-    <Quiz></Quiz>
-  )
-};
-*/
-
-
-
 export default App;
